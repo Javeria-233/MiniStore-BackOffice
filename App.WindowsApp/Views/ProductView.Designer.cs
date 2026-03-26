@@ -43,7 +43,7 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
+            txtSearch = new TextBox();
             cmbCategory = new ComboBox();
             cmbStockStatus = new ComboBox();
             panel3 = new Panel();
@@ -171,7 +171,7 @@
             tableLayoutPanel2.Controls.Add(label1, 0, 0);
             tableLayoutPanel2.Controls.Add(label2, 1, 0);
             tableLayoutPanel2.Controls.Add(label3, 2, 0);
-            tableLayoutPanel2.Controls.Add(textBox1, 0, 1);
+            tableLayoutPanel2.Controls.Add(txtSearch, 0, 1);
             tableLayoutPanel2.Controls.Add(cmbCategory, 1, 1);
             tableLayoutPanel2.Controls.Add(cmbStockStatus, 2, 1);
             tableLayoutPanel2.Dock = DockStyle.Fill;
@@ -214,14 +214,15 @@
             label3.TabIndex = 2;
             label3.Text = "Stock Status";
             // 
-            // textBox1
+            // txtSearch
             // 
-            textBox1.Dock = DockStyle.Fill;
-            textBox1.Location = new Point(3, 52);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(370, 31);
-            textBox1.TabIndex = 3;
+            txtSearch.Dock = DockStyle.Fill;
+            txtSearch.Location = new Point(3, 52);
+            txtSearch.Margin = new Padding(3, 4, 3, 4);
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(370, 31);
+            txtSearch.TabIndex = 3;
+            txtSearch.TextChanged += txtSearch_TextChanged;
             // 
             // cmbCategory
             // 
@@ -232,6 +233,7 @@
             cmbCategory.Name = "cmbCategory";
             cmbCategory.Size = new Size(279, 33);
             cmbCategory.TabIndex = 4;
+            cmbCategory.SelectedIndexChanged += cmbCategory_SelectedIndexChanged;
             // 
             // cmbStockStatus
             // 
@@ -242,6 +244,7 @@
             cmbStockStatus.Name = "cmbStockStatus";
             cmbStockStatus.Size = new Size(280, 33);
             cmbStockStatus.TabIndex = 5;
+            cmbStockStatus.SelectedIndexChanged += cmbStockStatus_SelectedIndexChanged;
             // 
             // panel3
             // 
@@ -366,7 +369,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.ComboBox cmbCategory;
         private System.Windows.Forms.ComboBox cmbStockStatus;
         private System.Windows.Forms.Panel panel3;
