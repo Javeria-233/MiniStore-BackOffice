@@ -42,17 +42,21 @@ namespace App.WindowsApp.Forms
 
             if (mode == ProductFormModeEnum.Edit || mode == ProductFormModeEnum.View)
             {
-                
+
                 txtId.Text = p.Id;
                 txtName.Text = p.Name;
-                cmbCat.SelectedItem= p.Category;
+                cmbCat.SelectedItem = p.Category;
                 cmbProductStatus.SelectedItem = p.Status;
                 nuPrice.Value = p.Price;
                 nuStock.Value = p.Stock;
             }
-           
+
         }
 
+        private void ProductForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

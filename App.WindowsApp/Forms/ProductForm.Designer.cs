@@ -85,7 +85,7 @@
             label3.Location = new Point(3, 100);
             label3.Name = "label3";
             label3.Size = new Size(49, 25);
-            label3.TabIndex = 2;
+            label3.TabIndex = 8;
             label3.Text = "Price";
             // 
             // label4
@@ -94,7 +94,7 @@
             label4.Location = new Point(3, 150);
             label4.Name = "label4";
             label4.Size = new Size(55, 25);
-            label4.TabIndex = 3;
+            label4.TabIndex = 9;
             label4.Text = "Stock";
             // 
             // label5
@@ -103,7 +103,7 @@
             label5.Location = new Point(3, 200);
             label5.Name = "label5";
             label5.Size = new Size(60, 25);
-            label5.TabIndex = 4;
+            label5.TabIndex = 10;
             label5.Text = "Status";
             // 
             // label6
@@ -112,7 +112,7 @@
             label6.Location = new Point(3, 250);
             label6.Name = "label6";
             label6.Size = new Size(30, 25);
-            label6.TabIndex = 5;
+            label6.TabIndex = 11;
             label6.Text = "ID";
             // 
             // label1
@@ -121,7 +121,7 @@
             label1.Location = new Point(3, 0);
             label1.Name = "label1";
             label1.Size = new Size(59, 25);
-            label1.TabIndex = 0;
+            label1.TabIndex = 6;
             label1.Text = "Name";
             // 
             // label2
@@ -130,7 +130,7 @@
             label2.Location = new Point(3, 50);
             label2.Name = "label2";
             label2.Size = new Size(81, 25);
-            label2.TabIndex = 1;
+            label2.TabIndex = 7;
             label2.Text = "category";
             // 
             // txtName
@@ -139,7 +139,7 @@
             txtName.Location = new Point(148, 3);
             txtName.Name = "txtName";
             txtName.Size = new Size(577, 31);
-            txtName.TabIndex = 6;
+            txtName.TabIndex = 0;
             // 
             // cmbCat
             // 
@@ -148,7 +148,7 @@
             cmbCat.Location = new Point(148, 53);
             cmbCat.Name = "cmbCat";
             cmbCat.Size = new Size(577, 33);
-            cmbCat.TabIndex = 7;
+            cmbCat.TabIndex = 1;
             // 
             // nuPrice
             // 
@@ -156,7 +156,7 @@
             nuPrice.Location = new Point(148, 103);
             nuPrice.Name = "nuPrice";
             nuPrice.Size = new Size(577, 31);
-            nuPrice.TabIndex = 8;
+            nuPrice.TabIndex = 2;
             // 
             // nuStock
             // 
@@ -164,7 +164,7 @@
             nuStock.Location = new Point(148, 153);
             nuStock.Name = "nuStock";
             nuStock.Size = new Size(577, 31);
-            nuStock.TabIndex = 9;
+            nuStock.TabIndex = 3;
             // 
             // cmbProductStatus
             // 
@@ -173,7 +173,7 @@
             cmbProductStatus.Location = new Point(148, 203);
             cmbProductStatus.Name = "cmbProductStatus";
             cmbProductStatus.Size = new Size(577, 33);
-            cmbProductStatus.TabIndex = 10;
+            cmbProductStatus.TabIndex = 4;
             // 
             // txtId
             // 
@@ -182,7 +182,7 @@
             txtId.Name = "txtId";
             txtId.ReadOnly = true;
             txtId.Size = new Size(577, 31);
-            txtId.TabIndex = 11;
+            txtId.TabIndex = 5;
             // 
             // flowLayoutPanel1
             // 
@@ -223,6 +223,7 @@
             Name = "ProductForm";
             StartPosition = FormStartPosition.CenterParent;
             Text = "ProductForm";
+            Load += ProductForm_Load;
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)nuPrice).EndInit();
